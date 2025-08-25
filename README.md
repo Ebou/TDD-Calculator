@@ -21,3 +21,7 @@ Denne lommeregner er udviklet ved hjælp af TDD-metoderne vi kender fra undervis
 - **Array addition** (`add(int[])`) - Ligger alle tal i et array sammen
   - Eksempel: `add(new int[]{1,2,3})` returnerer `6`
   - Håndterer tomme arrays og null-værdier
+
+---
+
+![Footer Image](https://i.ibb.co/fVGV87zd/image-2025-08-25-045801806.png)
