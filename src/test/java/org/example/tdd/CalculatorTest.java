@@ -32,4 +32,54 @@ class CalculatorTest {
         double result = calculator.divide(10, 2);
         assertEquals(5.0, result);
     }
+    
+    @Test
+    void testAddString() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add("1,2,3");
+        assertEquals(6, result);
+    }
+    
+    @Test
+    void testAddStringSingleNumber() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add("5");
+        assertEquals(5, result);
+    }
+    
+    @Test
+    void testAddStringWithSpaces() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add("1, 2, 3");
+        assertEquals(6, result);
+    }
+    
+    @Test
+    void testAddStringEmpty() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add("");
+        assertEquals(0, result);
+    }
+    
+    @Test
+    void testAddArray() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(new int[]{1, 2, 3});
+        assertEquals(6, result);
+    }
+    
+    @Test
+    void testAddArrayEmpty() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(new int[]{});
+        assertEquals(0, result);
+    }
+    
+    @Test
+    void testAddArraySingleElement() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(new int[]{5});
+        assertEquals(5, result);
+    }
+
 }
